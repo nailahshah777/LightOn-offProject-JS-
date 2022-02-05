@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+    <header>
+    <h1>Light on/off project</h1>
+    </header>
+    <div id="lightdiv">
+        
+        <div id="imagediv">
+        <img src="./images/light_bulb_off.png" id="bulb" style="height:300px;width:200px"/>
+        </div>
+        <div id="btndiv">
+
+     <button id="off" onclick="off()">Switch OFF The Light</button>
+        <button id="on" onclick="start()">Switch ON The Light</button>
+        
+        </div>
+
+    </div>
+    </div>
+    <script>
+     let start=()=>{
+         
+       document.getElementById('bulb').src="./images/images4.png"
+         
+     }
+let off=()=>{
+    document.getElementById('bulb').src="./images/light_bulb_off.png"
+      
+
+}
+    
+
+    </script>
+</body>
+</html>
